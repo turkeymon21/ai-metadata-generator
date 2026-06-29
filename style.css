@@ -1,0 +1,5 @@
+
+body{font-family:Arial;background:#111;color:white;display:flex;justify-content:center;padding:40px}
+.box{max-width:800px;width:100%}
+input,button,textarea{width:100%;padding:12px;margin-top:12px;border-radius:8px}
+textarea{background:#222;color:white}
