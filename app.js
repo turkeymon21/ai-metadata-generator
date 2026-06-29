@@ -1,0 +1,3 @@
+let rows=[["Filename","Title","Keywords"]];
+async function generateBatch(){const key=document.getElementById('apiKey').value;const files=document.getElementById('images').files;for(const file of files){rows.push([file.name,'Generated Title','keyword1,keyword2']);document.getElementById('status').textContent+='\nDone: '+file.name;}}
+function downloadCSV(){let csv=rows.map(r=>r.join(',')).join('\n');let blob=new Blob([csv],{type:'text/csv'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='metadata.csv';a.click();}
